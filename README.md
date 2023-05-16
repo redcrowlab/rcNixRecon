@@ -6,9 +6,10 @@ Red Crow Labs
 
 #######################################################################
 
+DESCRIPTION: 
 rcNixRecon is PoC Code to conduct a survey of a Unix based host and attempt to collect basic information useful to an attacker or for identifying potential vulnerabilities and defenses. 
 
-Why a shell script? This code is designed to be as portable as possible so that it can work on devices from desktops to super computers to IoT running embedded Linux. 
+Why a shell script? This code is designed to be as portable as possible so that it can work on devices from desktops to super computers to IoT running embedded Linux. Not all systems, especially embedded or IoT have python, perl, etc. available.
 
 This tool performs the following checks:
 
@@ -28,11 +29,18 @@ This tool performs the following checks:
 
 ========================================================================= INSTALL:
 
+INSTALLATION:
+
 git clone https://github.com/redcrowlab/rcNixRecon.git
 
 ========================================================================= USAGE:
+USAGE:
 
-./rcNixRecon
+chmod 755 rcNixRecon.sh
+/bin/sh rcNixRecon.sh
+
+========================================================================= 
+
+NOTE:
 
 The tool will give different results depending on if it is run as root or as a regular user.
-========================================================================= 
